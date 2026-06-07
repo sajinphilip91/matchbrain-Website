@@ -17,7 +17,6 @@
   table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14px; }
   th, td { border: 1px solid #e3e3e3; padding: 8px 10px; text-align: left; vertical-align: top; }
   th { background: #f6f7fb; font-weight: 700; }
-  code { background: #f2f2f5; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
 </style>
 </head>
 <body>
@@ -25,7 +24,7 @@
 <h1>Privacy Policy</h1>
 <p class="meta">MatchBrain &middot; Last updated: 7 June 2026</p>
 
-<p>This Privacy Policy explains how MatchBrain ("MatchBrain", "we", "us", or "our") collects, uses, shares, and protects your information when you use the MatchBrain mobile application (the "App") and related services. MatchBrain is a free football match-prediction game. By using the App, you agree to the practices described in this policy.</p>
+<p>This Privacy Policy explains how MatchBrain ("MatchBrain", "we", "us", or "our") collects, uses, shares, and protects your information when you use the MatchBrain mobile application (the "App") and related services. MatchBrain is operated by Sajin Philip, an independent developer. MatchBrain is a free football match-prediction game. By using the App, you agree to the practices described in this policy.</p>
 
 <p>MatchBrain does not involve real-money wagering, betting, gambling, or cash prizes. All points and rankings are virtual and have no monetary value.</p>
 
@@ -42,6 +41,7 @@
 <h3>1.2 Information collected automatically</h3>
 <ul>
   <li><strong>Crash and diagnostic data.</strong> Through Firebase Crashlytics, we collect crash reports and diagnostic information such as device model, operating system version, app version, and the state of the app at the time of a crash. This helps us fix bugs and improve stability.</li>
+  <li><strong>Usage and analytics data.</strong> We may use analytics tools (such as Google Analytics for Firebase) to understand how the App is used and to improve it — for example, which screens and features are popular and general usage patterns. Any such data is collected in aggregate, is not used to identify you personally, and is never used for advertising. Analytics may not be active in all versions of the App; where it is, we will reflect this in our practices.</li>
   <li><strong>Technical and security logs.</strong> Our backend provider (Supabase) may process technical information such as IP address and timestamps as part of authentication, security, and abuse prevention.</li>
 </ul>
 
@@ -60,24 +60,25 @@
   <tr><td>Operate the prediction game and calculate your scores</td><td>Predictions, match results, points</td></tr>
   <tr><td>Display global leaderboards and rankings</td><td>Nickname, avatar, total points</td></tr>
   <tr><td>Enable private leagues with friends</td><td>League membership, codes, points</td></tr>
-  <tr><td>Diagnose crashes and improve the App</td><td>Crash and diagnostic data</td></tr>
+  <tr><td>Understand usage and improve the App</td><td>Crash, diagnostic, and aggregate usage/analytics data</td></tr>
   <tr><td>Maintain security and prevent abuse</td><td>Technical/security logs</td></tr>
 </table>
 
 <h2>3. Information Visible to Other Users</h2>
 <p>Because MatchBrain is a social prediction game, some information is visible to other users:</p>
 <ul>
-  <li>Your <strong>nickname, avatar, total points, and rank</strong> appear on global and league leaderboards.</li>
-  <li>Within a private league, after a match has kicked off, your predictions for that match may be visible to other members of that league. Predictions are <strong>not</strong> visible to other users before a match kicks off.</li>
+  <li>Your <strong>nickname, avatar, total points, and global rank</strong> are visible to all users on the global leaderboard — including people using the App as guests.</li>
+  <li>League members may also see your <strong>nickname, avatar, points, rankings, and league participation status</strong> within any league you join.</li>
+  <li>After a match kicks off, your <strong>predictions</strong> for that match may be visible to other members of leagues you belong to. Predictions are <strong>not</strong> visible before a match kicks off.</li>
+  <li>Your email address and account identifiers are <strong>never</strong> shown to other users.</li>
 </ul>
-<p>Your email address and account identifiers are never shown to other users.</p>
 
 <h2>4. How We Share Information</h2>
 <p>We share information only with service providers that help us operate the App. We do not sell your data. These providers act as our processors and are bound to protect your information:</p>
 <table>
   <tr><th>Provider</th><th>Purpose</th></tr>
   <tr><td>Supabase</td><td>Backend database, authentication, and hosting (stores your account, profile, predictions, and leagues)</td></tr>
-  <tr><td>Google (Google Sign-In, Firebase Crashlytics)</td><td>Authentication and crash/diagnostic reporting</td></tr>
+  <tr><td>Google (Google Sign-In, Firebase Crashlytics &amp; Analytics)</td><td>Authentication, crash/diagnostic reporting, and aggregate usage analytics</td></tr>
   <tr><td>Apple (Sign in with Apple)</td><td>Authentication</td></tr>
 </table>
 <p>We also use API-Sports as a source of football fixtures, scores, and team data. This data flows <em>into</em> the App; we do not send your personal information to API-Sports.</p>
@@ -87,7 +88,7 @@
 <p>Where the GDPR applies, we process your information on the following bases: <strong>performance of a contract</strong> (to provide the App and its features), <strong>legitimate interests</strong> (to secure, maintain, and improve the App), and <strong>consent</strong> (where required, which you may withdraw at any time).</p>
 
 <h2>6. Data Retention</h2>
-<p>We retain your account and game data for as long as your account is active. If you delete your account, we delete or anonymize your personal data, except where we must retain limited information to comply with legal obligations or resolve disputes. Crash and diagnostic data is retained on a rolling basis by Firebase Crashlytics.</p>
+<p>We retain your account and game data for as long as your account is active. If you delete your account, we delete or anonymize your personal data, except where we must retain limited information to comply with legal obligations or resolve disputes. Crash, diagnostic, and analytics data is retained on a rolling basis by the relevant service provider.</p>
 
 <h2>7. Your Rights and Choices</h2>
 <ul>
@@ -107,11 +108,12 @@
 <p>Your information may be processed and stored on servers located outside your country of residence. Where we transfer data internationally, we take steps to ensure it is protected in accordance with this policy and applicable law.</p>
 
 <h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above. Significant changes may be communicated in the App.</p>
+<p>We may update this Privacy Policy from time to time — for example, if we introduce analytics or new features. When we do, we will revise the "Last updated" date above. Significant changes may be communicated in the App.</p>
 
 <h2>12. Contact Us</h2>
 <p>If you have questions or requests regarding this Privacy Policy or your data, contact us at:</p>
-<p><strong>Email:</strong> <a href="mailto:hello@getmatchbrain.com">hello@getmatchbrain.com</a><br>
+<p><strong>MatchBrain</strong> — operated by Sajin Philip (independent developer)<br>
+<strong>Email:</strong> <a href="mailto:hello@getmatchbrain.com">hello@getmatchbrain.com</a><br>
 <strong>Website:</strong> <a href="https://getmatchbrain.com">getmatchbrain.com</a></p>
 
 </body>
