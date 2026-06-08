@@ -174,7 +174,7 @@ main.container {
   gap: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--card-border);
-  padding: 10px 16px; /* Increased mobile padding to make buttons bigger */
+  padding: 14px 16px;
   border-radius: 12px;
   color: var(--text-white);
   text-decoration: none;
