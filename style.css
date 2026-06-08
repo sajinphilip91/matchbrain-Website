@@ -48,7 +48,7 @@ body {
 /* Header / Logo */
 .logo-header {
   text-align: center;
-  padding: 40px 0 20px;
+  padding: 24px 0 10px;
 }
 
 .logo-header img {
@@ -70,7 +70,7 @@ body {
 .hero-stadium {
   position: relative;
   width: calc(100% + 40px);
-  margin: 0 -20px 10px;
+  margin: -24px -20px -20px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -86,17 +86,22 @@ body {
 /* Main Titles */
 .titles-container {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   padding: 0 10px;
 }
 
 .main-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.25;
   margin-bottom: 8px;
   color: var(--text-white);
   letter-spacing: -0.5px;
+}
+
+.main-title span {
+  display: block;
+  white-space: nowrap;
 }
 
 .main-tagline {
@@ -110,7 +115,7 @@ body {
 .features-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .feature-col {
@@ -137,33 +142,36 @@ body {
 /* App Download Badges (New Styling) */
 .download-section {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
-  padding: 0 10px;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0;
+  flex-wrap: nowrap;
 }
 
 .badge-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--card-border);
-  padding: 10px 20px;
-  border-radius: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
   color: var(--text-white);
   text-decoration: none;
   font-weight: 500;
   transition: var(--transition-smooth);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  flex: 1;
+  min-width: 0;
 }
 
 .badge-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
+  flex-shrink: 0;
   transition: var(--transition-smooth);
 }
 
@@ -174,15 +182,15 @@ body {
 }
 
 .badge-btn .badge-text span:first-child {
-  font-size: 9px;
+  font-size: 8px;
   color: var(--text-gray);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   line-height: 1.1;
 }
 
 .badge-btn .badge-text span:last-child {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -301,6 +309,22 @@ body {
   }
 
   .badge-btn {
+    flex: initial;
     padding: 12px 24px;
+    gap: 10px;
+  }
+
+  .badge-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .badge-btn .badge-text span:first-child {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .badge-btn .badge-text span:last-child {
+    font-size: 14px;
   }
 }
