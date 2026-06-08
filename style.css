@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg-dark: #000000;
-  --bg-darker: #000000;
+  --bg-dark: #111111;
+  --bg-darker: #0a0a0a;
   --primary-lime: #0DFF00;
   --secondary-blue: #0048FF;
   --text-white: #FFFFFF;
