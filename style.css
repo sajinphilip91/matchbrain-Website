@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-dark: #0C0E1B;
+  --bg-darker: #070810;
+  --primary-lime: #0DFF00;
+  --secondary-blue: #0048FF;
+  --text-white: #FFFFFF;
+  --text-gray: #8F91A2;
+  --text-muted: #575A6E;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(12, 14, 27, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-dark);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header / Logo */
+.logo-header {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.logo-header img {
+  height: 48px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-header p {
+  font-size: 12px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 4px;
+}
+
+/* Stadium Hero Illustration */
+.hero-stadium {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-stadium img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: invert(1) brightness(0.95) contrast(1.1);
+  mix-blend-mode: screen;
+  opacity: 0.4;
+}
+
+/* Main Titles */
+.titles-container {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: var(--text-white);
+  letter-spacing: -0.5px;
+}
+
+.main-tagline {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-gray);
+  letter-spacing: 0.5px;
+}
+
+/* Features Side-by-Side Row */
+.features-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.feature-col {
+  flex: 1;
+  text-align: center;
+  padding: 0 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-col:last-child {
+  border-right: none;
+}
+
+.feature-col-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--text-white);
+  transition: var(--transition-smooth);
+}
+
+.feature-col:hover .feature-col-icon {
+  background: rgba(13, 255, 0, 0.12);
+  border-color: var(--primary-lime);
+  color: var(--primary-lime);
+  box-shadow: 0 0 15px rgba(13, 255, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.feature-col-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-col h3 {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--text-white);
+}
+
+.feature-col p {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text-gray);
+}
+
+/* App Download Badges (New Styling) */
+.download-section {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.badge-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: var(--transition-smooth);
+}
+
+.badge-btn .badge-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-btn .badge-text span:first-child {
+  font-size: 9px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.badge-btn .badge-text span:last-child {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.badge-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-lime);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(13, 255, 0, 0.1);
+}
+
+.badge-btn.primary-badge {
+  background: var(--text-white);
+  color: var(--bg-dark);
+  border-color: var(--text-white);
+}
+
+.badge-btn.primary-badge svg {
+  fill: var(--bg-dark);
+}
+
+.badge-btn.primary-badge .badge-text span:first-child {
+  color: rgba(12, 14, 27, 0.6);
+}
+
+.badge-btn.primary-badge:hover {
+  background: var(--primary-lime);
+  border-color: var(--primary-lime);
+  color: var(--bg-dark);
+  box-shadow: 0 10px 20px rgba(13, 255, 0, 0.25);
+}
+
+
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px 0;
+  text-align: center;
+  background-color: var(--bg-darker);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo img {
+  height: 24px;
+  width: auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 13px;
+  transition: var(--transition-smooth);
+}
+
+.footer-links a:hover {
+  color: var(--primary-lime);
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+/* Desktop Styles Override */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .hero-stadium {
+    max-width: 500px;
+  }
+
+  .main-title {
+    font-size: 44px;
+  }
+
+  .main-tagline {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .feature-col {
+    padding: 0 24px;
+  }
+
+  .feature-col h3 {
+    font-size: 15px;
+  }
+
+  .feature-col p {
+    font-size: 13px;
+  }
+
+  .download-section {
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+
+  .badge-btn {
+    padding: 12px 24px;
+  }
+}

@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MatchBrain — Predict. Compete. Climb.</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: #0B0814; color: #fff; min-height: 100vh;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 24px;
-  }
-  .logo { font-size: 44px; font-weight: 900; letter-spacing: -1px; }
-  .logo span { color: #4ADE80; }
-  .tag { color: rgba(255,255,255,0.5); font-size: 17px; margin-top: 10px; font-weight: 500; }
-  .soon {
-    margin-top: 28px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
-    color: #004DFF; font-weight: 700;
-  }
-  .footer { position: fixed; bottom: 24px; font-size: 13px; color: rgba(255,255,255,0.35); }
-  .footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
-  .footer a:hover { color: #fff; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchBrain — Predict. Compete. Climb.</title>
+  <meta name="description" content="Predict football match scores, challenge your friends in private leagues, and climb the global leaderboards. The ultimate free football prediction game.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Images/logo mark.png" type="image/png">
 </head>
 <body>
-  <div class="logo">Match<span>Brain</span></div>
-  <div class="tag">Predict. Compete. Climb.</div>
-  <div class="soon">Coming Soon</div>
-  <div class="footer">
-    <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
-    <a href="mailto:hello@getmatchbrain.com">hello@getmatchbrain.com</a>
-  </div>
+
+  <!-- Main Website Container -->
+  <main class="container">
+    
+    <!-- MatchBrain Logo Header -->
+    <header class="logo-header">
+      <img src="Images/Logo on dark bg.png" alt="MatchBrain Logo">
+    </header>
+
+    <!-- Stadium Illustration Hero -->
+    <section class="hero-stadium">
+      <img src="Images/home bg.png" alt="Stadium and Winner Trophy Illustration">
+    </section>
+
+    <!-- Title and Subtitle Headings -->
+    <section class="titles-container">
+      <h1 class="main-title">Predict world cup,<br>Challenge your Friends</h1>
+      <p class="main-tagline">Predict. Compete. Climb</p>
+    </section>
+
+    <!-- 3-Column Features Section (Predict, Earn, Compete) -->
+    <section class="features-row">
+      <!-- Predict -->
+      <div class="feature-col">
+        <div class="feature-col-icon">
+          <!-- Clean Target/Bullseye Icon for Predict -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+        </div>
+        <h3>Predict</h3>
+        <p>Make your predictions before every match</p>
+      </div>
+
+      <!-- Earn -->
+      <div class="feature-col">
+        <div class="feature-col-icon">
+          <!-- Clean Star Icon for Earn -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <h3>Earn</h3>
+        <p>Get points for correct predictions</p>
+      </div>
+
+      <!-- Compete -->
+      <div class="feature-col">
+        <div class="feature-col-icon">
+          <!-- Clean Trophy Icon for Compete -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+            <path d="M4 22h16"></path>
+            <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path>
+            <path d="M12 2a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+          </svg>
+        </div>
+        <h3>Compete</h3>
+        <p>Challenge friends and climb the rankings</p>
+      </div>
+    </section>
+
+    <!-- App Download Action Badges -->
+    <section class="download-section">
+      <!-- App Store iOS Badge -->
+      <a href="#" class="badge-btn primary-badge" id="btn-appstore">
+        <svg viewBox="0 0 24 24">
+          <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22.05 13.89,21.24 12.37,21.24C10.84,21.24 10.37,21.97 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/>
+        </svg>
+        <div class="badge-text">
+          <span>Download on the</span>
+          <span>App Store</span>
+        </div>
+      </a>
+      
+      <!-- Play Store Android Badge -->
+      <a href="#" class="badge-btn" id="btn-playstore">
+        <svg viewBox="0 0 24 24">
+          <path d="M3.25,3.25C3.07,3.43 3,3.7 3,4V20C3,20.3 3.07,20.57 3.25,20.75L3.32,20.82L12.5,11.64V11.36L3.32,2.18L3.25,3.25M15.58,9.27L12.5,11.36V11.64L15.58,13.73L15.65,13.69L19.3,11.61C20.34,11.02 20.34,10.06 19.3,9.47L15.65,9.39L15.58,9.27M12.5,11.5L3.43,20.57C3.77,20.92 4.33,20.94 4.9,20.61L15.58,14.54L12.5,11.5M12.5,11.5L15.58,8.46L4.9,2.39C4.33,2.06 3.77,2.08 3.43,2.43L12.5,11.5Z"/>
+        </svg>
+        <div class="badge-text">
+          <span>Get it on</span>
+          <span>Google Play</span>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="Images/Logo on dark bg.png" alt="MatchBrain Logo">
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html" id="link-privacy">Privacy Policy</a>
+        <a href="delete-account.html" id="link-delete">Delete Account</a>
+        <a href="mailto:hello@getmatchbrain.com" id="link-contact">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 MatchBrain. Operated by Sajin Philip.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
