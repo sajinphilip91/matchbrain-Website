@@ -57,7 +57,7 @@ main.container {
 /* Header / Logo */
 .logo-header {
   text-align: center;
-  padding: 32px 0 8px;
+  padding: 48px 0 8px;
   flex-shrink: 0;
 }
 
