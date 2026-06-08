@@ -45,10 +45,20 @@ body {
   padding: 0 20px;
 }
 
+/* Main Viewport flex container on mobile */
+main.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
+  padding-bottom: 24px;
+}
+
 /* Header / Logo */
 .logo-header {
   text-align: center;
-  padding: 24px 0 10px;
+  padding: 16px 0 8px;
+  flex-shrink: 0;
 }
 
 .logo-header img {
@@ -70,24 +80,30 @@ body {
 .hero-stadium {
   position: relative;
   width: calc(100% + 40px);
-  margin: -24px -20px -20px;
+  margin: 0 -20px;
+  flex: 1;
+  min-height: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
 .hero-stadium img {
-  width: 100%;
-  height: auto;
-  display: block;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
   mix-blend-mode: screen;
 }
 
 /* Main Titles */
 .titles-container {
   text-align: center;
+  margin-top: 16px; /* Added clean space between stadium sketch and text */
   margin-bottom: 24px;
   padding: 0 10px;
+  flex-shrink: 0;
 }
 
 .main-title {
@@ -115,7 +131,8 @@ body {
 .features-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+  flex-shrink: 0;
 }
 
 .feature-col {
@@ -142,21 +159,23 @@ body {
 /* App Download Badges (New Styling) */
 .download-section {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   padding: 0;
   flex-wrap: nowrap;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .badge-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--card-border);
-  padding: 8px 12px;
-  border-radius: 10px;
+  padding: 10px 16px; /* Increased mobile padding to make buttons bigger */
+  border-radius: 12px;
   color: var(--text-white);
   text-decoration: none;
   font-weight: 500;
@@ -165,11 +184,12 @@ body {
   -webkit-backdrop-filter: blur(10px);
   flex: 1;
   min-width: 0;
+  justify-content: center;
 }
 
 .badge-btn svg {
-  width: 18px;
-  height: 18px;
+  width: 22px; /* Increased SVG size to make button bigger */
+  height: 22px;
   fill: currentColor;
   flex-shrink: 0;
   transition: var(--transition-smooth);
@@ -190,7 +210,7 @@ body {
 }
 
 .badge-btn .badge-text span:last-child {
-  font-size: 11px;
+  font-size: 13px; /* Increased mobile text size to make buttons bigger */
   font-weight: 700;
   line-height: 1.2;
 }
@@ -268,6 +288,13 @@ body {
 
 /* Desktop Styles Override */
 @media (min-width: 768px) {
+  main.container {
+    display: block;
+    min-height: auto;
+    height: auto;
+    padding-bottom: 0;
+  }
+
   .container {
     max-width: 960px;
   }
@@ -280,6 +307,14 @@ body {
     max-width: 500px;
     margin: 0 auto 10px;
     width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .hero-stadium img {
+    max-height: none;
+    width: 100%;
+    height: auto;
   }
 
   .main-title {
