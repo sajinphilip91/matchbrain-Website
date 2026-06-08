@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg-dark: #0C0E1B;
-  --bg-darker: #070810;
+  --bg-dark: #111111;
+  --bg-darker: #0a0a0a;
   --primary-lime: #0DFF00;
   --secondary-blue: #0048FF;
   --text-white: #FFFFFF;
@@ -52,7 +52,7 @@ body {
 }
 
 .logo-header img {
-  height: 48px;
+  height: 64px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -69,20 +69,18 @@ body {
 /* Stadium Hero Illustration */
 .hero-stadium {
   position: relative;
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto 10px;
+  width: calc(100% + 40px);
+  margin: 0 -20px 10px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-stadium img {
   width: 100%;
   height: auto;
   display: block;
-  filter: invert(1) brightness(0.95) contrast(1.1);
   mix-blend-mode: screen;
-  opacity: 0.4;
 }
 
 /* Main Titles */
@@ -119,38 +117,6 @@ body {
   flex: 1;
   text-align: center;
   padding: 0 8px;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.feature-col:last-child {
-  border-right: none;
-}
-
-.feature-col-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px;
-  color: var(--text-white);
-  transition: var(--transition-smooth);
-}
-
-.feature-col:hover .feature-col-icon {
-  background: rgba(13, 255, 0, 0.12);
-  border-color: var(--primary-lime);
-  color: var(--primary-lime);
-  box-shadow: 0 0 15px rgba(13, 255, 0, 0.3);
-  transform: scale(1.05);
-}
-
-.feature-col-icon svg {
-  width: 24px;
-  height: 24px;
 }
 
 .feature-col h3 {
@@ -297,9 +263,15 @@ body {
   .container {
     max-width: 960px;
   }
+
+  .logo-header img {
+    height: 80px;
+  }
   
   .hero-stadium {
     max-width: 500px;
+    margin: 0 auto 10px;
+    width: 100%;
   }
 
   .main-title {
