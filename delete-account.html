@@ -77,6 +77,9 @@
   .box p {
     color: #FFFFFF;
   }
+  .box.alt {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
   .email {
     font-size: 20px;
     font-weight: 800;
@@ -128,6 +131,17 @@
   td {
     color: #8F91A2;
   }
+  .step-label {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
 </style>
 </head>
 <body>
@@ -145,43 +159,49 @@
 </a>
 
 <h1>Delete Your MatchBrain Account</h1>
-<p class="meta">MatchBrain &middot; operated by Sajin Philip &middot; Last updated: 7 June 2026</p>
+<p class="meta">MatchBrain &middot; operated by Sajin Philip &middot; Last updated: 9 June 2026</p>
 
-<p>This page explains how to request deletion of your <strong>MatchBrain</strong> account and the data associated with it. MatchBrain is a free football prediction app operated by Sajin Philip.</p>
+<p>This page explains how to permanently delete your <strong>MatchBrain</strong> account and all associated data. MatchBrain is a free football prediction app operated by Sajin Philip.</p>
 
-<h2>How to request account deletion</h2>
+<h2>Option 1 — Delete directly in the app</h2>
+<p>The fastest way to delete your account is directly inside the MatchBrain app. No email required.</p>
 <div class="box">
-  <p>To delete your account, email us from the address associated with your MatchBrain account:</p>
+  <ol style="margin-bottom:0;">
+    <li><span class="step-label">1</span> Open the MatchBrain app and make sure you are signed in.</li>
+    <li><span class="step-label">2</span> Tap the <strong>Profile</strong> tab (bottom navigation).</li>
+    <li><span class="step-label">3</span> Scroll down and tap <strong>Delete Account</strong>.</li>
+    <li><span class="step-label">4</span> Confirm when prompted.</li>
+  </ol>
+</div>
+<p>Your account and all associated data are permanently and immediately deleted. This action cannot be undone.</p>
+
+<h2>Option 2 — Request deletion by email</h2>
+<p>If you cannot access the app or prefer to request deletion by email, send us a message from the address associated with your MatchBrain account:</p>
+<div class="box alt">
+  <p>Email us at:</p>
   <p class="email"><a href="mailto:hello@getmatchbrain.com?subject=Delete%20my%20MatchBrain%20account">hello@getmatchbrain.com</a></p>
-  <p style="margin-bottom:0;">Use the subject line <strong>"Delete my MatchBrain account"</strong>. We will verify your request and permanently delete your account.</p>
+  <p style="margin-bottom:0;">Use the subject line <strong>"Delete my MatchBrain account"</strong>. We will verify your request and process the deletion within <strong>30 days</strong>.</p>
 </div>
 
-<p><strong>Steps:</strong></p>
-<ol>
-  <li>Send an email to <a href="mailto:hello@getmatchbrain.com">hello@getmatchbrain.com</a> from the email address you used to sign in to MatchBrain (your Google or Apple account email).</li>
-  <li>Put <strong>"Delete my MatchBrain account"</strong> in the subject line.</li>
-  <li>We will confirm your identity and process the deletion.</li>
-</ol>
-
 <h2>What data is deleted</h2>
-<p>When your account is deleted, we permanently remove:</p>
+<p>When your account is deleted (by either method), we permanently remove:</p>
 <ul>
-  <li>Your profile (nickname and avatar)</li>
+  <li>Your profile — nickname and avatar</li>
   <li>Your account identifiers and the email associated with your account</li>
   <li>All of your match predictions and tournament predictions</li>
-  <li>Your private league memberships and league points</li>
+  <li>Your private league memberships and points</li>
   <li>Your leaderboard history</li>
 </ul>
 
 <h2>What data may be retained</h2>
 <table>
   <tr><th>Data</th><th>Retention</th></tr>
-  <tr><td>Crash/diagnostic logs (Firebase Crashlytics)</td><td>Retained on a rolling basis and not linked to your identity after account deletion</td></tr>
+  <tr><td>Crash and diagnostic logs (Firebase Crashlytics)</td><td>Retained on a rolling basis; not linked to your identity after account deletion</td></tr>
   <tr><td>Records required for legal, security, or fraud-prevention obligations</td><td>Retained only as long as required by law, then deleted</td></tr>
 </table>
 
 <h2>Timeframe</h2>
-<p>We action deletion requests promptly and complete account deletion within <strong>30 days</strong> of verifying your request.</p>
+<p>In-app deletion is immediate. Email-based requests are processed within <strong>30 days</strong> of verification.</p>
 
 <h2>Contact</h2>
 <p>Questions about deleting your account or your data? Contact us at <a href="mailto:hello@getmatchbrain.com">hello@getmatchbrain.com</a>.</p>
