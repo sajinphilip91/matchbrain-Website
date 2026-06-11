@@ -54,27 +54,36 @@
 
     <!-- App Download Action Badges -->
     <section class="download-section">
-      <!-- App Store iOS Badge -->
-      <a href="#" class="badge-btn primary-badge" id="btn-appstore">
-        <svg viewBox="0 0 24 24">
-          <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22.05 13.89,21.24 12.37,21.24C10.84,21.24 10.37,21.97 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/>
-        </svg>
-        <div class="badge-text">
-          <span>Download on the</span>
-          <span>App Store</span>
-        </div>
-      </a>
-      
-      <!-- Play Store Android Badge -->
-      <a href="#" class="badge-btn" id="btn-playstore">
-        <svg viewBox="0 0 24 24">
-          <path d="M3.25,3.25C3.07,3.43 3,3.7 3,4V20C3,20.3 3.07,20.57 3.25,20.75L3.32,20.82L12.5,11.64V11.36L3.32,2.18L3.25,3.25M15.58,9.27L12.5,11.36V11.64L15.58,13.73L15.65,13.69L19.3,11.61C20.34,11.02 20.34,10.06 19.3,9.47L15.65,9.39L15.58,9.27M12.5,11.5L3.43,20.57C3.77,20.92 4.33,20.94 4.9,20.61L15.58,14.54L12.5,11.5M12.5,11.5L15.58,8.46L4.9,2.39C4.33,2.06 3.77,2.08 3.43,2.43L12.5,11.5Z"/>
-        </svg>
-        <div class="badge-text">
-          <span>Get it on</span>
-          <span>Google Play</span>
-        </div>
-      </a>
+      <!-- QR Code (Hidden on Mobile, Visible on Desktop) -->
+      <div class="qr-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://getmatchbrain.com&color=ffffff&bgcolor=111111" alt="Scan QR code to download" class="qr-code">
+        <p class="qr-text">Scan QR code to download</p>
+      </div>
+
+      <!-- App Download Buttons -->
+      <div class="download-buttons">
+        <!-- App Store iOS Badge -->
+        <a href="#" class="badge-btn primary-badge" id="btn-appstore">
+          <svg viewBox="0 0 24 24">
+            <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22.05 13.89,21.24 12.37,21.24C10.84,21.24 10.37,21.97 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/>
+          </svg>
+          <div class="badge-text">
+            <span>Download on the</span>
+            <span>App Store</span>
+          </div>
+        </a>
+        
+        <!-- Play Store Android Badge -->
+        <a href="#" class="badge-btn" id="btn-playstore">
+          <svg viewBox="0 0 24 24">
+            <path d="M3.25,3.25C3.07,3.43 3,3.7 3,4V20C3,20.3 3.07,20.57 3.25,20.75L3.32,20.82L12.5,11.64V11.36L3.32,2.18L3.25,3.25M15.58,9.27L12.5,11.36V11.64L15.58,13.73L15.65,13.69L19.3,11.61C20.34,11.02 20.34,10.06 19.3,9.47L15.65,9.39L15.58,9.27M12.5,11.5L3.43,20.57C3.77,20.92 4.33,20.94 4.9,20.61L15.58,14.54L12.5,11.5M12.5,11.5L15.58,8.46L4.9,2.39C4.33,2.06 3.77,2.08 3.43,2.43L12.5,11.5Z"/>
+          </svg>
+          <div class="badge-text">
+            <span>Get it on</span>
+            <span>Google Play</span>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -85,6 +94,7 @@
         <img src="Images/Logo on dark bg.png" alt="MatchBrain Logo">
       </div>
       <div class="footer-links">
+        <a href="terms.html" id="link-terms">Terms & Conditions</a>
         <a href="privacy.html" id="link-privacy">Privacy Policy</a>
         <a href="delete-account.html" id="link-delete">Delete Account</a>
         <a href="mailto:hello@getmatchbrain.com" id="link-contact">Contact</a>
