@@ -120,6 +120,10 @@ main.container {
   white-space: nowrap;
 }
 
+.desktop-title-only {
+  display: none !important;
+}
+
 .main-tagline {
   font-size: 15px;
   font-weight: 400;
@@ -383,6 +387,15 @@ main.container {
     margin: 0;
     padding: 0;
     flex-shrink: initial;
+  }
+
+  .mobile-title-only {
+    display: none !important;
+  }
+
+  .desktop-title-only {
+    display: block !important;
+    white-space: nowrap;
   }
 
   .main-title {
