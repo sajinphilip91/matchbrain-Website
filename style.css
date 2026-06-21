@@ -259,6 +259,14 @@ main.container {
   box-shadow: 0 10px 20px rgba(13, 255, 0, 0.25);
 }
 
+#btn-playstore {
+  background: #000000;
+}
+
+#btn-playstore:hover {
+  background: #080808;
+}
+
 
 
 /* Product Hunt Badge Styles */
