@@ -490,9 +490,9 @@ main.container {
 
   .badge-btn {
     flex: none;
-    width: 175px;
+    width: 190px;
     height: 56px;
-    padding: 0 20px;
+    padding: 0 16px;
     gap: 10px;
     justify-content: center;
   }
@@ -503,12 +503,14 @@ main.container {
   }
 
   .badge-btn .badge-text span:first-child {
-    font-size: 10px;
+    font-size: 9.5px;
     letter-spacing: 0.5px;
+    white-space: nowrap;
   }
 
   .badge-btn .badge-text span:last-child {
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .features-row {
