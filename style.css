@@ -80,7 +80,7 @@ main.container {
 .hero-stadium {
   position: relative;
   width: calc(100% + 40px);
-  margin: 0 -20px;
+  margin: -16px -20px 0 -20px; /* Pull the stadium illustration slightly up */
   flex: 1;
   min-height: 0;
   display: flex;
@@ -100,8 +100,8 @@ main.container {
 /* Main Titles */
 .titles-container {
   text-align: center;
-  margin-top: 16px; /* Added clean space between stadium sketch and text */
-  margin-bottom: 24px;
+  margin-top: 16px;
+  margin-bottom: 12px; /* Reduced margin to group with Product Hunt button */
   padding: 0 10px;
   flex-shrink: 0;
 }
@@ -260,6 +260,35 @@ main.container {
 }
 
 
+
+/* Product Hunt Badge Styles */
+.product-hunt-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.product-hunt-desktop {
+  display: none;
+}
+
+.ph-badge {
+  display: block;
+  max-width: 100%;
+  height: 54px;
+  width: auto;
+  border-radius: 12px;
+  transition: var(--transition-smooth);
+}
+
+.ph-badge:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+}
 
 /* Footer */
 .footer {
@@ -500,5 +529,16 @@ main.container {
   .feature-col p {
     font-size: 12px;
     line-height: 1.4;
+  }
+
+  .product-hunt-mobile {
+    display: none !important;
+  }
+
+  .product-hunt-desktop {
+    display: block !important;
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
   }
 }
