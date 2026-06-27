@@ -300,12 +300,12 @@ main.container {
 
 
 
-/* Product Hunt Badge Styles */
 .product-hunt-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 24px;
   flex-shrink: 0;
   width: 100%;
 }
