@@ -187,9 +187,9 @@ main.container {
 .badge-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   background: #000000;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* 50% opacity white border */
   padding: 0 16px;
   height: 54px;
   border-radius: 12px;
@@ -205,8 +205,8 @@ main.container {
 }
 
 .badge-btn svg {
-  width: 22px; /* Increased SVG size to make button bigger */
-  height: 22px;
+  width: 26px; /* Bigger icon size */
+  height: 26px;
   flex-shrink: 0;
   transition: var(--transition-smooth);
 }
@@ -224,13 +224,12 @@ main.container {
 .badge-btn .badge-text span:first-child {
   font-size: 8px;
   color: var(--text-gray);
-  text-transform: uppercase;
   letter-spacing: 0.3px;
   line-height: 1.1;
 }
 
 .badge-btn .badge-text span:last-child {
-  font-size: 13px; /* Increased mobile text size to make buttons bigger */
+  font-size: 15px; /* Bigger brand text size */
   font-weight: 700;
   line-height: 1.2;
 }
@@ -485,10 +484,10 @@ main.container {
 
   .badge-btn {
     flex: none;
-    width: 190px;
-    height: 56px;
-    padding: 0 16px;
-    gap: 10px;
+    width: 210px; /* Slightly wider to fit larger text and icon */
+    height: 60px; /* Slightly taller for premium desktop feel */
+    padding: 0 20px;
+    gap: 14px;
     justify-content: center;
   }
 
@@ -501,8 +500,8 @@ main.container {
   }
 
   .badge-btn svg {
-    width: 22px;
-    height: 22px;
+    width: 30px; /* Bigger desktop icon */
+    height: 30px;
   }
 
   .badge-btn .badge-text span:first-child {
@@ -512,7 +511,7 @@ main.container {
   }
 
   .badge-btn .badge-text span:last-child {
-    font-size: 14px;
+    font-size: 17px; /* App Store / Google Play name is bigger on desktop */
     white-space: nowrap;
   }
 
