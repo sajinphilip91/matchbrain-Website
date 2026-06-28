@@ -188,8 +188,8 @@ main.container {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--card-border);
+  background: #000000;
+  border: 1px solid #ffffff;
   padding: 0 16px;
   height: 54px;
   border-radius: 12px;
@@ -207,9 +207,12 @@ main.container {
 .badge-btn svg {
   width: 22px; /* Increased SVG size to make button bigger */
   height: 22px;
-  fill: currentColor;
   flex-shrink: 0;
   transition: var(--transition-smooth);
+}
+
+.badge-btn svg:not(.colored-svg) {
+  fill: currentColor;
 }
 
 .badge-btn .badge-text {
@@ -233,40 +236,10 @@ main.container {
 }
 
 .badge-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #111111;
   border-color: var(--primary-lime);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(13, 255, 0, 0.1);
-}
-
-.badge-btn.primary-badge {
-  background: var(--text-white);
-  color: var(--bg-dark);
-  border-color: var(--text-white);
-}
-
-.badge-btn.primary-badge svg {
-  fill: var(--bg-dark);
-}
-
-.badge-btn.primary-badge .badge-text span:first-child {
-  color: rgba(12, 14, 27, 0.6);
-}
-
-.badge-btn.primary-badge:hover {
-  background: var(--primary-lime);
-  border-color: var(--primary-lime);
-  color: var(--bg-dark);
-  box-shadow: 0 10px 20px rgba(13, 255, 0, 0.25);
-}
-
-#btn-playstore {
-  background: #000000;
-  border-color: #ffffff;
-}
-
-#btn-playstore:hover {
-  background: #080808;
+  box-shadow: 0 10px 20px rgba(13, 255, 0, 0.15);
 }
 
 .download-buttons-desktop {
@@ -288,15 +261,6 @@ main.container {
   width: 250px;
   height: 54px;
   flex: none;
-}
-
-#btn-playstore-mobile {
-  background: #000000;
-  border-color: #ffffff;
-}
-
-#btn-playstore-mobile:hover {
-  background: #080808;
 }
 
 
