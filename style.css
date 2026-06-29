@@ -126,10 +126,11 @@ main.container {
 }
 
 .main-tagline {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-gray);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  margin-top: 8px;
 }
 
 /* Features Side-by-Side Row */
