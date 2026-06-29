@@ -62,6 +62,10 @@ main.container {
   flex-shrink: 0;
 }
 
+.logo-header picture {
+  display: block;
+}
+
 .logo-header img {
   height: 80px;
   width: auto;
@@ -310,6 +314,10 @@ main.container {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.footer-logo picture {
+  display: block;
 }
 
 .footer-logo img {
