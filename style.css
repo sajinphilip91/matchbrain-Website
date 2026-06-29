@@ -196,7 +196,7 @@ main.container {
   align-items: center;
   gap: 12px;
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.5); /* 50% opacity white border */
+  border: 1px solid transparent;
   padding: 0 16px;
   height: 54px;
   border-radius: 12px;
